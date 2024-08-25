@@ -22,7 +22,9 @@
     "autoprefixer": "^10.4.20",
     "eslint": "^9.9.0",
     "eslint-plugin-format": "^0.1.2",
+    "lint-staged": "^15.2.9",
     "postcss": "^8.4.41",
+    "simple-git-hooks": "^2.11.1",
     "tailwindcss": "^3.4.10",
     "typescript": "^5.5.3",
     "unplugin-auto-import": "^0.18.2",
@@ -30,5 +32,11 @@
     "vite": "^5.4.1",
     "vite-plugin-vue-devtools": "^7.3.8",
     "vue-tsc": "^2.0.29"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
   }
 }
