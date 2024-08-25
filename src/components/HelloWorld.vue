@@ -21,10 +21,24 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="flex justify-center mt-64 transition-colors duration-1000 ease-linear" :style="`color:${randomColor}`">
+  <div class="flex justify-center mt-64">
     <div>
-      <div class="text-5xl font-thin">
-        Rika-Vue-Template <span class="icon-[mdi--github] text-2xl" />
+      <div class="text-5xl font-thin transition-colors duration-1000 ease-linear" :style="`color:${randomColor}`">
+        Rika-Vue-Template
+      </div>
+      <div class="my-4 flex justify-center gap-5 text-gray-500">
+        <a
+          target="_blank" href="https://rika-me.netlify.app/#/"
+          class="icon-[mdi--user] text-5xl hover:text-gray-700"
+        />
+        <a
+          target="_blank" href="https://github.com/rika-template/vue-template"
+          class="icon-[mdi--github] text-5xl hover:text-gray-700"
+        />
+        <a
+          target="_blank" href="https://gitee.com/rika-template/vue-template"
+          class="icon-[simple-icons--gitee] text-5xl hover:text-gray-700"
+        />
       </div>
       <div />
     </div>
