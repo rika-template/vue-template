@@ -5,6 +5,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 import vueDevTools from 'vite-plugin-vue-devtools'
+import ReactivityTransform from '@vue-macros/reactivity-transform/vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -31,5 +32,5 @@ export default defineConfig({
   }), vueDevTools(
     // 根据需求修改
     { launchEditor: 'webstorm' },
-  )],
+  ), ReactivityTransform()],
 })

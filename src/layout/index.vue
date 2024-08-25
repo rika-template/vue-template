@@ -1,12 +1,9 @@
 <script setup lang="ts">
-const a
-  = '1'
-
-a.trim()
+const a = $ref(0)
 </script>
 
 <template>
-  <div>1</div>
+  <div>{{ a }}</div>
 </template>
 
 <style scoped>
