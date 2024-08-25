@@ -17,6 +17,9 @@
 * [Vue DevTools](https://devtools-next.vuejs.org/) 下一代`VueDevTools`
 * [@vue-macros/reactivity-transform](https://vue-macros.dev/zh-CN/features/reactivity-transform.html) 一些响应式数据相关的宏
 
+### ICON
+
+* [iconify](https://iconify.design/) iconify
 代码提交规范
 
 ```js

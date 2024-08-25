@@ -1,30 +1,32 @@
 <script setup lang="ts">
-let count = $ref(0)
-
-function increase() {
-  count++
+function getRandomInt(min: number, max: number) {
+  min = Math.ceil(min)
+  max = Math.floor(max)
+  return Math.floor(Math.random() * (max - min + 1)) + min
 }
+
+let randomColor = $ref('rgb(0,0,0)')
+
+let timeout: NodeJS.Timeout
+
+onMounted(() => {
+  timeout = setInterval(() => {
+    randomColor = `rgb(${getRandomInt(0, 255)},${getRandomInt(0, 255)},${getRandomInt(0, 255)})`
+  }, 1000)
+})
+
+onUnmounted(() => {
+  clearInterval(timeout)
+})
 </script>
 
 <template>
-  <div class="flex justify-center mt-64">
+  <div class="flex justify-center mt-64 transition-colors duration-1000 ease-linear" :style="`color:${randomColor}`">
     <div>
       <div class="text-5xl font-thin">
-        Rika-Vue-Template
+        Rika-Vue-Template <span class="icon-[mdi--github] text-2xl" />
       </div>
-      <div>
-        <div class="text-center">
-          <button class="btn" @click="increase">
-            count is {{ count }}
-          </button>
-        </div>
-      </div>
+      <div />
     </div>
   </div>
 </template>
-
-<style scoped>
-.btn {
-  @apply border-cyan-400 border-2 border-solid bg-cyan-100 px-2 py-1 rounded-xl hover:bg-cyan-200 text-gray-700 m-2;
-}
-</style>
