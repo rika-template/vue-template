@@ -7,7 +7,12 @@ import type { RouteRecordRaw } from 'vue-router'
 
 export default [
   {
-    path: '',
-    component: () => import('@/layout/index.vue'),
+    path: '/',
+    name: 'layout',
+    children: [{
+      path: '',
+      component: () => import('@/page/index.vue'),
+      name: 'home',
+    }],
   },
 ] satisfies RouteRecordRaw[]

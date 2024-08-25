@@ -16,3 +16,22 @@
 * [unplugin-vue-components](https://github.com/unplugin/unplugin-vue-components) 自动导入`src/components`下的组件
 * [Vue DevTools](https://devtools-next.vuejs.org/) 下一代`VueDevTools`
 * [@vue-macros/reactivity-transform](https://vue-macros.dev/zh-CN/features/reactivity-transform.html) 一些响应式数据相关的宏
+
+代码提交规范
+
+```js
+[
+  'feat',
+  'fix',
+  'perf',
+  'style',
+  'docs',
+  'test',
+  'refactor',
+  'build',
+  'ci',
+  'chore',
+  'revert',
+  'wip',
+]
+```

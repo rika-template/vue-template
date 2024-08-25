@@ -1,11 +1,6 @@
 <script setup lang="ts">
-const a = $ref(0)
 </script>
 
 <template>
-  <div>{{ a }}</div>
+  <router-view />
 </template>
-
-<style scoped>
-
-</style>
