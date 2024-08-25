@@ -8,7 +8,8 @@
     "build": "vue-tsc -b && vite build",
     "preview": "vite preview",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "commitlint": "commitlint --edit"
   },
   "dependencies": {
     "@types/node": "^22.5.0",
@@ -18,6 +19,8 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.27.1",
+    "@commitlint/cli": "^19.4.0",
+    "@commitlint/config-conventional": "^19.2.2",
     "@vitejs/plugin-vue": "^5.1.2",
     "@vue-macros/reactivity-transform": "^1.0.3",
     "autoprefixer": "^10.4.20",
@@ -35,7 +38,8 @@
     "vue-tsc": "^2.0.29"
   },
   "simple-git-hooks": {
-    "pre-commit": "pnpm lint-staged"
+    "pre-commit": "pnpm lint-staged",
+    "commit-msg": "pnpm commitlint"
   },
   "lint-staged": {
     "*": "eslint --fix"
