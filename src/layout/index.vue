@@ -1,9 +1,8 @@
 <script setup lang="ts">
-/**
- * @Author Rika
- * @Description
- * @CreateData 2024/08/25
- */
+const a
+  = '1'
+
+a.trim()
 </script>
 
 <template>
