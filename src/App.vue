@@ -1,7 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+
+</script>
 
 <template>
-  <h1 class="text-3xl font-bold underline text-blue-500">
-    Hello world!
-  </h1>
+  <router-view/>
 </template>
