@@ -11,3 +11,6 @@
 ### 插件
 
 * [Vue Router](https://router.vuejs.org/zh/) 路由系统
+* [unplugin-auto-import](https://github.com/unplugin/unplugin-auto-import) 自动导入`Composition API`
+* [unplugin-vue-components](https://github.com/unplugin/unplugin-vue-components) 自动导入`src/components`下的组件
+* [Vue DevTools](https://devtools-next.vuejs.org/) 下一代`VueDevTools` 
