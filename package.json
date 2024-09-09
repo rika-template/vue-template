@@ -15,6 +15,7 @@
   "dependencies": {
     "@iconify/json": "^2.2.245",
     "@types/node": "^22.5.4",
+    "@vueuse/core": "^11.0.3",
     "element-plus": "^2.8.2",
     "vue": "^3.5.3",
     "vue-router": "^4.4.3"
