@@ -18,6 +18,9 @@ onMounted(() => {
 onUnmounted(() => {
   clearInterval(timeout)
 })
+
+const isDark = useDark()
+const toggleDark = useToggle(isDark)
 </script>
 
 <template>
@@ -38,6 +41,11 @@ onUnmounted(() => {
         <a
           target="_blank" href="https://gitee.com/rika-template/vue-template"
           class="icon-[simple-icons--gitee] text-5xl hover:text-gray-700"
+        />
+        <a
+          :class="isDark ? 'icon-[carbon--moon]' : 'icon-[carbon--sun]'"
+          class=" text-5xl hover:text-gray-700"
+          @click="toggleDark()"
         />
       </div>
       <div />
