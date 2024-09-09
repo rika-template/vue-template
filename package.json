@@ -13,32 +13,32 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@iconify/json": "^2.2.241",
-    "@types/node": "^22.5.0",
-    "element-plus": "^2.8.1",
-    "vue": "^3.4.37",
+    "@iconify/json": "^2.2.245",
+    "@types/node": "^22.5.4",
+    "element-plus": "^2.8.2",
+    "vue": "^3.5.3",
     "vue-router": "^4.4.3"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.27.1",
-    "@commitlint/cli": "^19.4.0",
-    "@commitlint/config-conventional": "^19.2.2",
+    "@antfu/eslint-config": "^3.4.1",
+    "@commitlint/cli": "^19.4.1",
+    "@commitlint/config-conventional": "^19.4.1",
     "@iconify/tailwind": "^1.1.3",
-    "@vitejs/plugin-vue": "^5.1.2",
-    "@vue-macros/reactivity-transform": "^1.0.3",
+    "@vitejs/plugin-vue": "^5.1.3",
+    "@vue-macros/reactivity-transform": "^1.0.4",
     "autoprefixer": "^10.4.20",
-    "eslint": "^9.9.0",
+    "eslint": "^9.10.0",
     "eslint-plugin-format": "^0.1.2",
     "husky": "^8.0.3",
-    "lint-staged": "^15.2.9",
-    "postcss": "^8.4.41",
+    "lint-staged": "^15.2.10",
+    "postcss": "^8.4.45",
     "tailwindcss": "^3.4.10",
-    "typescript": "^5.5.3",
+    "typescript": "^5.5.4",
     "unplugin-auto-import": "^0.18.2",
     "unplugin-vue-components": "^0.27.4",
-    "vite": "^5.4.1",
-    "vite-plugin-vue-devtools": "^7.3.8",
-    "vue-tsc": "^2.0.29"
+    "vite": "^5.4.3",
+    "vite-plugin-vue-devtools": "^7.4.4",
+    "vue-tsc": "^2.1.6"
   },
   "lint-staged": {
     "*": "eslint --fix"
