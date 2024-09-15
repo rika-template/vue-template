@@ -18,6 +18,7 @@ export default defineConfig({
     imports: [
       'vue',
       '@vueuse/core',
+      'vitest',
     ],
     dts: 'src/auto-imports.d.ts',
     dirs: [
