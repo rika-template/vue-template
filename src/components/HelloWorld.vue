@@ -24,8 +24,18 @@ const toggleDark = useToggle(isDark)
 </script>
 
 <template>
-  <div class="flex justify-center mt-64">
+  <div class="flex justify-center mt-32">
     <div>
+      <div class="grid grid-cols-4 items-center gap-10 my-10">
+        <div class="icon-[logos--vue] size-20" />
+        <div class="icon-[logos--vitejs] size-20" />
+        <div class="icon-[logos--vitest] size-20" />
+        <div class="icon-[logos--tailwindcss-icon] size-20" />
+        <div class="icon-[logos--element] size-20" />
+        <div class="icon-[logos--eslint] size-20" />
+        <div class="icon-[logos--vueuse] size-20" />
+        <div class="icon-[logos--typescript-icon] size-20" />
+      </div>
       <div class="text-5xl font-thin transition-colors duration-1000 ease-linear" :style="`color:${randomColor}`">
         Rika-Vue-Template
       </div>
