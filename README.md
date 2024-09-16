@@ -7,7 +7,6 @@
 ### UI框架
 
 * [Tailwind CSS](https://tailwindcss.com/) 工具优先的`CSS`框架
-* [Element Plus](https://element-plus.org/zh-CN/) 组件库
 
 ### 插件
 

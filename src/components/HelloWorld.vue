@@ -31,7 +31,6 @@ const toggleDark = useToggle(isDark)
         <div class="icon-[logos--vitejs] size-20" />
         <div class="icon-[logos--vitest] size-20" />
         <div class="icon-[logos--tailwindcss-icon] size-20" />
-        <div class="icon-[logos--element] size-20" />
         <div class="icon-[logos--eslint] size-20" />
         <div class="icon-[logos--vueuse] size-20" />
         <div class="icon-[logos--typescript-icon] size-20" />
