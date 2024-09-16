@@ -5,13 +5,13 @@ function getRandomInt(min: number, max: number) {
   return Math.floor(Math.random() * (max - min + 1)) + min
 }
 
-let randomColor = $ref('rgb(0,0,0)')
+const randomColor = ref('rgb(0,0,0)')
 
 let timeout: NodeJS.Timeout
 
 onMounted(() => {
   timeout = setInterval(() => {
-    randomColor = `rgb(${getRandomInt(0, 255)},${getRandomInt(0, 255)},${getRandomInt(0, 255)})`
+    randomColor.value = `rgb(${getRandomInt(0, 255)},${getRandomInt(0, 255)},${getRandomInt(0, 255)})`
   }, 1000)
 })
 

@@ -28,7 +28,6 @@
     "@commitlint/config-conventional": "^19.5.0",
     "@iconify/tailwind": "^1.1.3",
     "@vitejs/plugin-vue": "^5.1.3",
-    "@vue-macros/reactivity-transform": "^1.1.1",
     "autoprefixer": "^10.4.20",
     "eslint": "^9.10.0",
     "eslint-plugin-format": "^0.1.2",
