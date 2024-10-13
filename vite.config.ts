@@ -22,9 +22,6 @@ export default defineConfig({
       'vitest',
     ],
     dts: 'src/auto-imports.d.ts',
-    dirs: [
-      'src/stores',
-    ],
     vueTemplate: true,
   }), Components({
     extensions: ['vue'],
